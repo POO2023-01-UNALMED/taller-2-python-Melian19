@@ -7,7 +7,7 @@ class Auto:
         self.marca = marca
         self.motor = motor
         self.registro = registro
-        Auto.cantidadCreados = cantidadCreados
+        Auto.cantidadCreados = cantidadCreados + 1
     
     def cantidadAsientos(self):
         totalAsientos = 0
@@ -52,3 +52,4 @@ class Motor:
         tipos = ["electrico","gasolina"]
         if tipo in tipos:
             self.tipo = tipo
+
