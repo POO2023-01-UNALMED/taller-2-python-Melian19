@@ -11,10 +11,8 @@ class Auto:
     
     def cantidadAsientos(self):
         totalAsientos = 0
-        for i in range(0, len(self.asiento)):
-            if i == None:
-                continue
-            if isinstance(self.asiento, Asiento):
+        for asiento in self.asiento:
+            if isinstance(asiento, Asiento):
                 totalAsientos += 1
         return (totalAsientos)
     
