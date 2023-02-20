@@ -17,17 +17,14 @@ class Auto:
         return (totalAsientos)
     
     def verificarIntegridad(self):
-        switch = True
         if self.motor.registro != self.registro:
-            switch = False
+            return("Las piezas no son originales")
         for asiento in self.asientos:
             if asiento != None:
                 if asiento.registro != self.registro:
-                    switch = False
-        if switch == True:
-            return("Auto original")
-        else:
-            return("Las piezas no son originales")
+                    return("Las piezas no son originales")
+        return("Auto original")
+
 
 class Asiento:
     def __init__(self, color, precio, registro):
