@@ -1,18 +1,18 @@
 cantidadCreados = 0
 class Auto:
-    def __init__(self, modelo, precio, asiento, marca, motor, registro,):
+    def __init__(self, modelo, precio, asiento, marca, motor, registro):
         self.modelo = modelo
         self.precio = precio
-        self.asiento = asiento
+        self.asiento = Asiento
         self.marca = marca
-        self.motor = motor
+        self.motor = Motor
         self.registro = registro
         Auto.cantidadCreados = cantidadCreados
     
     def cantidadAsientos(self):
         totalAsientos = 0
-        for asiento in self.asiento:
-            if isinstance(self.asiento, asiento):
+        for i in self.asiento:
+            if isinstance(self.asiento, Asiento):
                 totalAsientos += 1
         return (totalAsientos)
     
