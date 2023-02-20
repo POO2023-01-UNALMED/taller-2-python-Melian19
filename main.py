@@ -18,7 +18,7 @@ class Auto:
     
     def verificarIntegridad(self):
         switch = True
-        if Motor.registro == self.registro:
+        if self.motor.registro == self.registro:
             switch = False
         for asiento in self.asientos:
             if asiento != None:
