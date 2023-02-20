@@ -24,7 +24,7 @@ class Auto:
             switch = False
         for i in self.asiento:
             if self.asiento[i] != None:
-                if self.asiento.registro != self.registro:
+                if self.asiento[i].registro != self.registro:
                     switch = False
         if switch == True:
             return("Auto original")
