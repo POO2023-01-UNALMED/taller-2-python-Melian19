@@ -3,7 +3,7 @@ class Auto:
     def __init__(self, modelo, precio, asiento, marca, motor, registro):
         self.modelo = modelo
         self.precio = precio
-        self.asientos = asiento = []
+        self.asientos = asiento
         self.marca = marca
         self.motor = motor
         self.registro = registro
@@ -50,4 +50,3 @@ class Motor:
         tipos = ["electrico","gasolina"]
         if tipo in tipos:
             self.tipo = tipo
-
